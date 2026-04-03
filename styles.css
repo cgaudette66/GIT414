@@ -1,0 +1,166 @@
+
+/* CSS BY Christine Gaudette */
+
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap');
+
+/*#region CSS Reset*/
+/* CSS RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*#endregion*/
+
+/* ROOT VARIABLES */
+:root{
+  /* Color Theme */
+  --OffWhite: #E8E2CF;
+  --LgtPurple: #895E6F;
+  --DrkGray: #3E3C3B;
+  --DeepPurple: #3E1820;
+  --Mustard: #D9B036;
+  --Sage: #9A9269;
+
+  /* font family */
+  --Inter: 'Inter';
+  --PlayfairDisplay: 'Playfair Display';
+}
+
+/*  GLOBAL STYLES*/
+
+body{
+  font-family: var(--Inter);
+  font-size: 1rem;
+  background: var(--DrkGray);
+  color: var(--DrkGray);
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+/* Styles Header-Footer-Main */
+header, main, footer{
+  padding: 1rem;
+  width: calc(80% - 2rem);
+  margin: 0 auto;
+  background: var(--Sage);
+  text-align: center;
+}
+
+nav a{
+  background-color: var(--LgtPurple);
+	color: var(--OffWhite);
+  list-style-type: none;
+	display: block;
+	padding: 1rem;
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+	margin: 0.5rem auto;
+	border-radius: 1rem;
+	width: calc(100% - 2rem);
+	max-width: 480px;
+}
+
+nav a:hover{
+		background-color: var(--Mustard);
+		color: var(--OffWhite);
+	}
+
+
+main{
+  text-align: left;
+  background: var(--OffWhite);
+}
+
+/* headline Styles */
+
+h1, h2{
+  color: var(--DeepPurple);
+  font-family: var(--PlayfairDisplay);
+  font-weight: bold;
+	margin: 0.5rem 0;
+  text-align: center;
+}
+
+h1{
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2{
+  font-size: 1.75rem;
+}
+
+h3{
+  font-size: 1.50rem;
+  text-align: left;
+}
+
+p{
+  margin: 0.25rem 0;
+}
+
+/* MEDIA QUERY (medium) */
+
+@media screen and (min-width: 768px) {
+  nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+/* MEDIA QUERY (large) */
+/* MEDIA QUERY (xl) */
+
+
+
+
+
+
+
